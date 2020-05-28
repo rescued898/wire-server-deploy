@@ -187,5 +187,9 @@ data:
       {{- if .setUserMaxPermClients }}
       setUserMaxPermClients: {{ .setUserMaxPermClients }}
       {{- end }}
+      {{- if .setCustomerExtensions }}
+      setCustomerExtensions:
+        domainsBlockedForRegistration: {{ .setCustomerExtensions.domainsBlockedForRegistration }}
+      {{- end }}
     {{- end }}
   {{- end }}
